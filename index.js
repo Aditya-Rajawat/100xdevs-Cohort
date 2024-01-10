@@ -52,9 +52,6 @@ app.put("/", (req, res) => {
     UserKidneys.map((kidney) => {
         kidney.healthy = true
     })
-//   for (let i = 0; i < users[0].kidneys.length; i++) {
-//     users[0].kidneys[i].healthy = true;
-//   }
   res.json({
     Mission: "Successfull !",
   });
