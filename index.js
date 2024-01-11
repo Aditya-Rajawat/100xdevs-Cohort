@@ -53,7 +53,7 @@ app.put("/", (req, res) => {
         kidney.healthy = true
     })
   res.json({
-    Mission: "Successfull !",
+    Mission: "Successfull!",
   });
 });
 
@@ -66,10 +66,9 @@ app.delete("/", (req, res) => {
     users[0].kidneys = HealthyKidneys;
     
   res.json({
-    Talk : "Hogya!!"
+    Talk : "Hogya Bro!!"
   })
 })
-
 
 app.listen(port, () => {
   console.log(`Server started on locahost ${port}`);
