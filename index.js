@@ -70,6 +70,18 @@ app.delete("/", (req, res) => {
   })
 })
 
+app.delete("/", (req, res) => {
+  const Kidneys = users[0].kidneys
+  const HealthyKidneys = Kidneys.filter((kidney) => (
+    kidney.healthy === true
+  ))
+    users[0].kidneys = HealthyKidneys;
+    
+  res.json({
+    Talk : "Hogya Bro!!"
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server started on localhost ${port}`);
 });
