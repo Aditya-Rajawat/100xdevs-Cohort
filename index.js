@@ -63,11 +63,13 @@ app.delete("/", (req, res) => {
   const HealthyKidneys = Kidneys.filter((kidney) => (
     kidney.healthy === true
   ))
-    users[0].kidneys = HealthyKidneys
+    users[0].kidneys = HealthyKidneys;
+    
   res.json({
     Talk : "Hogya!!"
   })
 })
+
 
 app.listen(port, () => {
   console.log(`Server started on locahost ${port}`);
