@@ -61,7 +61,7 @@ app.put("/", (req, res) => {
 app.delete("/", (req, res) => {
   const Kidneys = users[0].kidneys
   const HealthyKidneys = Kidneys.filter((kidney) => (
-    kidney.healthy === true
+    kidney.healthy === false
   ))
     users[0].kidneys = HealthyKidneys;
     
