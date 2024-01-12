@@ -71,5 +71,5 @@ app.delete("/", (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Server started on localhost: ${port}`);
+  console.log(`App started on localhost: ${port}`);
 });
