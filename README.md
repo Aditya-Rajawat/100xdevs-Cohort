@@ -1,4 +1,5 @@
 # 0-100 Harkirat Cohort (MERN Stack)
 
-1. Learning Express.js.
-2. Creating Hospital management tasks
+- Deep dive into express.js.
+- Creating Hospital management tasks
+- Introduction to Git & Github
