@@ -66,7 +66,7 @@ app.delete("/", (req, res) => {
     users[0].kidneys = HealthyKidneys;
     
   res.json({
-    Talk : "Done bro!!"
+    Talk : "You are now healthy!!"
   })
 })
 
