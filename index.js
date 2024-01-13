@@ -53,7 +53,7 @@ app.put("/", (req, res) => {
         kidney.healthy = true
     })
   res.json({
-    Mission: "Success!",
+    Mission: "Successfully!",
   });
 });
 
