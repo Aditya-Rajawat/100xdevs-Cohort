@@ -12,18 +12,18 @@ app.get("/health-checkup", (req, res) => {
   //   Input Validation
   if (username === "aditya" && password == "12345") {
     res.json({
-      msg: "authenticate not done",
+      msg: "Validation Done!!",
     });
   }
 
   //   Authentication
   if (kidneyId == 1 || kidneyId == 2) {
     res.json({
-      msg: "Authentication done",
+      msg: "Authentication Done!!",
     });
   }
 });
 
 app.listen(port, () => {
-  console.log(`Server started on localhost : ${port}`);
+  console.log(`Server started on localhost ${port}`);
 });
