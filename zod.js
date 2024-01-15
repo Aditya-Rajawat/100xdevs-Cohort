@@ -10,6 +10,6 @@ function Validation (object) {
 }
 
 Validation({
-    email : "aditya@gmail.com",
+    email : "adityarajawat@gmail.com",
     password : 3434343
 })
