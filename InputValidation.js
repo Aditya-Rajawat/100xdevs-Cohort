@@ -12,7 +12,7 @@ const schema = zod.array(zod.number());
 // Country : "IN", "US"
 
 // const emailSchema = zod.object({
-//     email : zod.string(),
+//     email : zod.string().email(),
 //     password : zod.string().zod.number(),
 //     country : zod.literal("IN").or(zod.literal("US"))
 // })
