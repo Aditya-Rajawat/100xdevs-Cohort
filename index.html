@@ -7,14 +7,16 @@
   </head>
   <body>
     <button onclick="getuserdata()">Get user data</button>
-    <h1></h1>
+    <h1 id="heading"></h1>
     <script>
       getuserdata = async () => {
         const userData = await fetch(
           "https://jsonplaceholder.typicode.com/todos/1"
         );
         const response = await userData.json();
+        document.getElementById("heading").innerHTML = JSON.stringify(response)
         console.log(response);
+
       };
     </script>
   </body>
