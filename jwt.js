@@ -27,13 +27,13 @@ const ALL_USERS = [
 function userExists(username, password) {
   // write logic to return true or false if user exists
   // in ALL_USERS array
-  const userExists = false;
-  const newuser = ALL_USERS.map(() => {
-    if (username == username && password == password) {
-      return (userExists = true);
+  let isExist = false;
+  ALL_USERS.map((user) => {
+    if (user.username == username && user.password == password) {
+      return (isExist = true);
     }
   });
-  return userExists;
+  return isExist
 }
 
 app.post("/signin", (req, res) => {
@@ -51,6 +51,16 @@ app.post("/signin", (req, res) => {
     token,
   });
 });
+
+app.get('/users', (req, res) => {
+  const token = req.headers.authorization
+  console.log(token)
+  const decoded = jwt.verify(token, jwtPassword)
+  const username = decoded.username
+  res.json({
+    users : username
+  })
+})
 
 app.listen(port, () => {
   console.log(`Server started on localhost ${port}`);
