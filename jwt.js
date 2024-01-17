@@ -58,7 +58,8 @@ app.get('/users', (req, res) => {
   const decoded = jwt.verify(token, jwtPassword)
   const username = decoded.username
   res.json({
-    users : username
+    users : username,
+    users : ALL_USERS
   })
 })
 
