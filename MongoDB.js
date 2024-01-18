@@ -33,7 +33,7 @@ app.post("/signup", async (req, res) => {
     email: Realemail,
   });
   user.save();
-  res.send("User successfully created")
+  res.send("Woohhoo!!, User successfully created")
 });
 
 
