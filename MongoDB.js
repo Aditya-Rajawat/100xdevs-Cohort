@@ -1,13 +1,42 @@
-const mongoose = require("mongoose")
+const express = require("express");
+const app = express();
+const port = 3000;
 
-mongoose.connect("mongodb+srv://aditya:WfEGdxDkbe99A2EE@cluster0.qgdt0.mongodb.net/userappnew")
+app.use(express.json());
 
-const User = mongoose.model('Users', {username : String, password : String, email : String })
+const mongoose = require("mongoose");
 
-const user = new User ({
-    username : "aditya",
-    password : '12345',
-    email : "adityarajawat04@gmail.com"
-})
+mongoose.connect(
+  "mongodb+srv://aditya:WfEGdxDkbe99A2EE@cluster0.qgdt0.mongodb.net/userappnew"
+);
 
-user.save();
+const User = mongoose.model("Users", {
+  username: String,
+  password: String,
+  email: String,
+});
+
+app.post("/signup", (req, res) => {
+  const Realusername = req.body.username;
+  const Realpassword = req.body.password;
+  const Realemail = req.body.email;
+
+    const userExists = User.findOne({username : Realusername})
+
+    if(userExists){
+        res.send("User already exist")
+    }
+
+  const user = new User({
+    username: Realusername,
+    password: Realpassword,
+    email: Realemail,
+  });
+  user.save();
+  res.send("User successfully created")
+});
+
+
+app.listen(port, () => {
+  console.log(`App started on localhost ${port}`);
+});
