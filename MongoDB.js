@@ -24,7 +24,7 @@ app.post("/signup", async (req, res) => {
     const userExists = await User.findOne({username : Realusername})
 
     if(userExists){
-        return res.send("User already exist")
+        return res.send("User already exist!!")
     }
 
   const user = new User({
