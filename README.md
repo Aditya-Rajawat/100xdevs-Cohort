@@ -5,3 +5,4 @@
 - Introduction to Git & Github
 - Middleware, Global Catches, zod
 - Databases & Authentication
+- Introduction to MongoDB and Mongoose
