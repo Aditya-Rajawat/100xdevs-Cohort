@@ -16,15 +16,15 @@ const User = mongoose.model("Users", {
   email: String,
 });
 
-app.post("/signup", (req, res) => {
+app.post("/signup", async (req, res) => {
   const Realusername = req.body.username;
   const Realpassword = req.body.password;
   const Realemail = req.body.email;
 
-    const userExists = User.findOne({username : Realusername})
+    const userExists = await User.findOne({username : Realusername})
 
     if(userExists){
-        res.send("User already exist")
+        return res.send("User already exist")
     }
 
   const user = new User({
