@@ -27,7 +27,9 @@ function signJwt(username, password) {
 
 signJwt("ADITYA ONLY", "1234");
 
-app.listen(port);
+app.listen(port, () => {
+    console.log(`App started on localhost ${port}`)
+});
 
 // const jwt = require("jsonwebtoken");
 // const express = require("express");
