@@ -19,13 +19,13 @@ function signJwt(username, password) {
   const token = jwt.sign({ Realusername }, jwtPassword);
   console.log(token);
   const verification = jwt.verify(
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJSZWFsdXNlcm5hbWUiOnsic3VjY2VzcyI6ZmFsc2UsImVycm9yIjp7Imlzc3VlcyI6W3siY29kZSI6ImludmFsaWRfdHlwZSIsImV4cGVjdGVkIjoic3RyaW5nIiwicmVjZWl2ZWQiOiJvYmplY3QiLCJwYXRoIjpbXSwibWVzc2FnZSI6IkV4cGVjdGVkIHN0cmluZywgcmVjZWl2ZWQgb2JqZWN0In1dLCJuYW1lIjoiWm9kRXJyb3IifX0sImlhdCI6MTcwNTY3MzQyNX0.FxZTRhWaUyLNAovwkio7XApPTJRjuq1Onc09Vplbj_8",
-    "secret"
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJSZWFsdXNlcm5hbWUiOnsic3VjY2VzcyI6ZmFsc2UsImVycm9yIjp7Imlzc3VlcyI6W3siY29kZSI6ImludmFsaWRfdHlwZSIsImV4cGVjdGVkIjoic3RyaW5nIiwicmVjZWl2ZWQiOiJvYmplY3QiLCJwYXRoIjpbXSwibWVzc2FnZSI6IkV4cGVjdGVkIHN0cmluZywgcmVjZWl2ZWQgb2JqZWN0In1dLCJuYW1lIjoiWm9kRXJyb3IifX0sImlhdCI6MTcwNTY3MzcxNX0.alLX9rvmpHqrIU87wbe87G-lQPjmmdVjMppKmKzKz_c",
+    jwtPassword
   );
   console.log(verification);
 }
 
-signJwt("ADITYA ONLY", 123);
+signJwt("ADITYA ONLY", "1234");
 
 app.listen(port);
 
