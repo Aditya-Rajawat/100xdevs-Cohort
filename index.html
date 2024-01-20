@@ -8,6 +8,11 @@
   <body>
     <button onclick="getuserdata()">Get user data</button>
     <h1 id="heading"></h1>
+
+    <!-- DOM manipulation -->
+    <h1 class="dom">DOM Manipulation</h1>
+    <p class="subdom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, error.</p>
+
     <script>
       getuserdata = async () => {
         const userData = await fetch(
@@ -19,5 +24,6 @@
 
       };
     </script>
+    <script src="dom.js"></script>
   </body>
 </html>
