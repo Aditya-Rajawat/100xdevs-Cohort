@@ -1,2 +1,6 @@
 const domheading = document.getElementsByClassName("dom")
-domheading.innerHTML = 
+const btn = document.getElementById("btn")
+
+const newData = document.addEventListener("click", () => {
+    domheading.innerHTML = "Heading has changed"
+})
