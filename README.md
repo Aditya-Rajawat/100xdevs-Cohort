@@ -6,3 +6,4 @@
 - Middleware, Global Catches, zod
 - Databases & Authentication
 - Introduction to MongoDB and Mongoose
+- DOM Introduction
