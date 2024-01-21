@@ -1,14 +1,19 @@
-function handleClick() {
-  const mainheading = document.getElementsByClassName("para");
-  mainheading.innerText = "Heading changed";
-}
+// function handleClick() {
+//   const mainheading = document.getElementsByClassName("para");
+//   mainheading.innerText = "Heading changed";
+// }
 
-const heading = document.getElementById("heading");
+// const heading = document.getElementById("heading");
 
-const button = document.getElementById("btn");
-button.addEventListener("mouseover", () => {
-  heading.innerHTML = "New Heading hovered!!";
-  heading.style.color = "black";
-  heading.style.backgroundColor = "lightblue";
-  console.log("clicked");
-});
+// const button = document.getElementById("btn");
+// button.addEventListener("mouseover", () => {
+//   heading.innerHTML = "New Heading hovered!!";
+//   heading.style.color = "black";
+//   heading.style.backgroundColor = "lightblue";
+//   console.log("clicked");
+// });
+
+window.addEventListener("mouseover", () => {
+    const newbody = document.querySelector("body")
+    newbody.style.backgroundColor = "red"
+})
