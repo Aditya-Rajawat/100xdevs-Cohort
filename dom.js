@@ -15,5 +15,5 @@ button.addEventListener("mouseover", () => {
 
 window.addEventListener("mouseover", () => {
     const newbody = document.querySelector("body")
-    newbody.style.backgroundColor = "lightblue"
+    // newbody.style.backgroundColor = "lightblue"
 })
