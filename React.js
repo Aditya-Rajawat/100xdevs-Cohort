@@ -9,5 +9,5 @@ function handlechange(e){
 }
 taskaddbutton.addEventListener("click", () => {
     console.log("clicked")
-    newdata.innerHTML = `${inputvalue}`
+    newdata.innerHTML = `${taskname} + ${taskinfo}`
 })
