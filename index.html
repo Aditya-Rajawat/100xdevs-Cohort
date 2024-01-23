@@ -24,24 +24,12 @@
     <!-- To do app using DOM manipulation -->
 
     <div>
-      <form action="">
+      Name : <input type="text" placeholder="Enter task" id="taskname" value="" /> 
+      Bio : <input type="text" placeholder="Enter bio" id="taskbio" value="" />
+      <button id="taskbutton">Add Task</button>
 
-        <!-- Task Name -->
-        <div class="taskName" style="margin-bottom: 20px;">
-          <label for="">TaskName :</label>
-          <input type="text" style="width: 150px;" placeholder="Enter your task title" value="" id="taskname" onchange="handlechange()">
-        </div>
-
-        <!-- Task Info -->
-        <div class="taskName" style="margin-bottom: 20px;">
-          <label for="">TaskInfo :</label>
-          <input type="text" style="width: 150px;" placeholder="Describe your task" value="" id="taskinfo">
-        </div>
-
-      </form>
-      <button id="taskaddbutton">Add task</button>
-
-      <h2 id="newdata">New data will be inserted here!!</h2>
+      <h2 id="taskdata"></h2>
+      <button>Mark as done</button>
     </div>
 
     <script>
