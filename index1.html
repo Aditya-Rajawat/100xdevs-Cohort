@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document1</title>
     <style>
-        .numbers {
-            margin: 10px;
-        }
+      .numbers {
+        margin: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <script>
+    var a = document.getElementById("number1");
+    var b = document.getElementById("number2");
+
+    function handleClick() {
+      var totalSum = document.getElementsByClassName("totalSum");
+      totalSum = parseInt(a) + parseInt(b)
+    }
+  </script>
+  <body>
     <div class="container">
-        <input class="numbers" type="text" placeholder="Enter number 1"> <br>
-        <input class="numbers" type="text" placeholder="Enter number 2"> <br>
-        <button class="numbers">Calculate Sum</button>
+      <input
+        class="numbers"
+        id="number1"
+        type="text"
+        placeholder="Enter number 1"
+      />
+      <br />
+      <input
+        class="numbers"
+        id="number2"
+        type="text"
+        placeholder="Enter number 2"
+      />
+      <br />
+      <button class="numbers" id="btn" onclick="handleClick()">
+        Calculate Sum
+      </button>
+
+      <div class="totalSum"></div>
     </div>
-</body>
+  </body>
 </html>
