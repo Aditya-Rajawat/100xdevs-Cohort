@@ -7,15 +7,24 @@
 </head>
 <body>
     <div>
-        Principal : <input type="text" id="principal"> <br>
-        Rate : <input type="text" id="rate"><br>
-        Time : <input type="text" id="time"><br>
-        <button id="interestbutton" onclick="interestCalculator()">Calculate Interest</button>
+        Principal : <input type="text" id="principal" oninput="debounceinterestCalculator()"> <br>
+        Rate : <input type="text" id="rate" oninput="debounceinterestCalculator()"><br>
+        Time : <input type="text" id="time" oninput="debounceinterestCalculator()"><br>
+        <!-- <button id="interestbutton" onclick="interestCalculator()">Calculate Interest</button> -->
         <h2 id="totalInterest"></h2>
     </div>
 </body>
 <script>
     // Interest = p * r * t
+
+    // debouncing
+    let timeout;
+    function debounceinterestCalculator() {
+        clearTimeout(timeout)
+        timeout = setTimeout(() => {
+            interestCalculator()
+        }, 1000)
+    }
 
     async function interestCalculator () {
         const principal = document.getElementById("principal").value
