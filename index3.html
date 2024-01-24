@@ -48,15 +48,22 @@
 
       NewInterest = parseInt(principal) * parseInt(rate) * parseInt(time);
       totalInterest.innerHTML = NewInterest;
-    //   const response = await fetch(
-    //     "https://sum-server.100xdevs.com/interest?principal=" +
-    //       principal +
-    //       "&rate=" +
-    //       rate +
-    //       "&time=" +
-    //       time
-    //   );
-    const response = await fetch("http://localhost:3000/?principal=" + principal + "&rate=" + rate + "&time=" + time)
+      //   const response = await fetch(
+      //     "https://sum-server.100xdevs.com/interest?principal=" +
+      //       principal +
+      //       "&rate=" +
+      //       rate +
+      //       "&time=" +
+      //       time
+      //   );
+      const response = await fetch(
+        "http://localhost:3000/?principal=" +
+          principal +
+          "&rate=" +
+          rate +
+          "&time=" +
+          time
+      );
       const interest = await response.text();
       totalInterest.innerHTML = interest;
     }
