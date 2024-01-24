@@ -10,18 +10,7 @@
       }
     </style>
   </head>
-  <script>
-    var a = document.getElementById("number1");
-    var b = document.getElementById("number2");
 
-    function handleClick() {
-      var totalSum = document.getElementsByClassName("totalSum");
-      totalSum = a + b
-      console.log(totalSum)
-      alert('clicked')
-    }
-
-  </script>
   <body>
     <div class="container">
       <input
@@ -38,11 +27,22 @@
         placeholder="Enter number 2"
       />
       <br />
-      <button class="numbers" id="btn" onclick="handleClick()">
-        Calculate Sum
-      </button>
+      <button class="numbers" id="btn">Calculate Sum</button>
 
-      <div class="totalSum"></div>
+      <h3 class="numbers" id="output"></h3>
     </div>
   </body>
+
+  <script>
+    const button = document.getElementById("btn");
+    button.addEventListener("click", () => {
+      const number1 = document.getElementById("number1").value;
+      const number2 = document.getElementById("number2").value;
+
+      var sumofNumbers = parseInt(number1) + parseInt(number2);
+
+      const output = document.getElementById("output");
+      output.innerHTML = sumofNumbers;
+    });
+  </script>
 </html>
