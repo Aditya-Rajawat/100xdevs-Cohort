@@ -7,3 +7,5 @@
 - Databases & Authentication
 - Introduction to MongoDB and Mongoose
 - DOM Introduction
+- Debouncing in JS
+- React Introduction
