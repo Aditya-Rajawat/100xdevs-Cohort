@@ -27,22 +27,24 @@
         placeholder="Enter number 2"
       />
       <br />
-      <button class="numbers" id="btn">Calculate Sum</button>
+      <button class="numbers" id="btn" onclick="data()">Calculate Sum</button>
 
       <h3 class="numbers" id="output"></h3>
     </div>
   </body>
 
   <script>
-    const button = document.getElementById("btn");
-    button.addEventListener("click", () => {
-      const number1 = document.getElementById("number1").value;
+      async function data () {
+        const number1 = document.getElementById("number1").value;
       const number2 = document.getElementById("number2").value;
 
       var sumofNumbers = parseInt(number1) + parseInt(number2);
 
       const output = document.getElementById("output");
-      output.innerHTML = sumofNumbers;
-    });
+        const response = await fetch("https://sum-server.100xdevs.com/sum?a=" + number1 +"&b="+ number2)
+        const actualsum = await response.text();
+        output.innerHTML = actualsum
+      }
+      
   </script>
 </html>
