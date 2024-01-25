@@ -6,10 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <label for="">TaskName : </label><input type="text">
-        <label for="">TaskBio : </label><input type="text">
+    <div class="container">
+        <label for="">TaskName : </label><input type="text" id="taskname">
+        <label for="">TaskBio : </label><input type="text" id="taskbio">
+        <button id="addTaskbutton">Add Task</button>
+
+        <div id="main">
+            <p id="addedTask"></p>
+        </div>
     </div>
 </body>
-<script src="Todo.js"></script>
+<script>
+    const addTaskbutton = document.getElementById("addTaskbutton")
+    
+    addTaskbutton.addEventListener("click", () => {
+        const taskname = document.getElementById("taskname").value
+        const taskbio = document.getElementById("taskbio").value
+        const addedTask = document.getElementById("addedTask")
+        
+        addedTask.innerHTML = taskname + " " + taskbio
+        const node = document.createElement("button");
+        const textnode = document.createTextNode("Mark as done")
+        node.appendChild(textnode)
+        document.getElementById("main").appendChild(node)        
+    })
+</script>
 </html>
