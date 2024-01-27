@@ -12,13 +12,14 @@
     <h3 id="data"></h3>
 </body>
 <script>
-    const button = document.getElementById('id')
+    const button = document.getElementById('btn')
     button.addEventListener('click', () => {
         const name = document.getElementById("name").value
         const age = document.getElementById("age").value
-        const data = document.getElementById(data)
+        const data = document.getElementById('data')
 
-        data.innerHTML = name + age;
+        const newData = `"Username" : ${name}, "Age" : ${age}`;
+        console.log(newData)
     })
 </script>
 </html>
