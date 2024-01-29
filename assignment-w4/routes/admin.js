@@ -7,9 +7,6 @@ router.post('/signup', (req, res) => {
     // Implement admin signup logic
     const username = req.body.username;
     const password = req.body.password;
-    res.json({
-        message : "Admin created successfully"
-    })
 });
 
 router.post('/courses', adminMiddleware, (req, res) => {
