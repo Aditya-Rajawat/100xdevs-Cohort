@@ -1,4 +1,4 @@
-const { Router } = require("express");
+const { Router, response } = require("express");
 const adminMiddleware = require("../middleware/admin");
 const { Admin, Course } = require("../db");
 const router = Router();
@@ -36,11 +36,12 @@ router.post("/courses", adminMiddleware, async (req, res) => {
   });
 });
 
-router.get("/courses", (req, res) => {
+router.get("/courses", adminMiddleware, async (req, res) => {
   // Implement fetching all courses logic
-  res.json({
-    msg: "Hello",
-  });
-});
+    const response = await Course.find({})
+    res.json({
+        Course : response
+    })
+})
 
 module.exports = router;
