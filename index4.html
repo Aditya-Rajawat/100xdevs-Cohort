@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age data app</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="Enter your name">
+    <input id="age" type="number" placeholder="Enter your age">
+    <button id="btn">Get data</button>
+    <h3 id="data">New data loading...</h3>
+</body>
+<script>
+    const button = document.getElementById('btn')
+    button.addEventListener('click', () => {
+        const name = document.getElementById("name").value
+        const age = document.getElementById("age").value
+        const data = document.getElementById('data')
+
+        data.innerHTML = `Username : ${name}, Age : ${age}`;
+        alert(data.innerHTML)
+    })
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="">TaskName : </label>
+      <input type="text" id="taskname" placeholder="Enter task name"/><br />
+      <label for="">TaskBio : </label>
+      <input type="text" id="taskbio" placeholder="Enter task bio" /><br />
+      <button id="addTaskbutton">Add Task</button>
+
+      <div id="main">
+        <p id="addedTask"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const addTaskbutton = document.getElementById("addTaskbutton");
+
+    addTaskbutton.addEventListener("click", () => {
+      const taskname = document.getElementById("taskname").value;
+      const taskbio = document.getElementById("taskbio").value;
+      const main = document.getElementById("main");
+      const t = document.createElement("p");
+      const d = document.createElement("p");
+      const markBtn = document.createElement("button");
+      markBtn.innerText = "Mark as DOne!!";
+      t.innerText = taskname;
+      d.innerText = taskbio;
+      main.appendChild(t);
+      main.appendChild(d);
+      main.appendChild(markBtn);
+
+      markBtn.addEventListener("click", () => {
+        markBtn.innerHTML = "Task Completed!!";
+      });
+    });
+  </script>
+</html>
