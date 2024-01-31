@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="getuserdata()">Get user data</button>
+    <h1 id="heading"></h1> -->
+
+    <!-- DOM manipulation -->
+    <!-- <h1 id="heading-1">DOM Manipulation</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, error.
+    </p>
+
+    <button id="btn" onclick="handleClick()">Change heading</button>
+    <h2 id="heading">Heading 2</h2>
+    <button id="btn">Hover Me</button>
+
+    <button id="btn">Change Color</button> -->
+
+    <!-- To do app using DOM manipulation -->
+
+    <div>
+      Name : <input type="text" placeholder="Enter task" id="taskname" value="" /> 
+      Bio : <input type="text" placeholder="Enter bio" id="taskbio" value="" />
+      <button id="taskbutton">Add Task</button>
+
+      <h2 id="taskdata"></h2>
+      <button id="taskdone">Mark as done</button>
+    </div>
+
+    <script>
+      getuserdata = async () => {
+        const userData = await fetch(
+          "https://jsonplaceholder.typicode.com/todos/1"
+        );
+        const response = await userData.json();
+        document.getElementById("heading").innerHTML = JSON.stringify(response);
+        console.log(response);
+      };
+    </script>
+    <!-- <script src="dom.js"></script> -->
+    <script src="React.js"></script>
+  </body>
+</html>
