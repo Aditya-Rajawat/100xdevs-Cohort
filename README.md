@@ -1,4 +1,4 @@
-# 0-100 Harkirat Cohort (MERN Stack)
+## 0-100 Harkirat Cohort (MERN Stack)
 
 - Deep dive into express.js.
 - Creating Hospital management tasks
