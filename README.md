@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-## Todo app with React
-
-- User can add task
-- User can mark task as complete
-=======
-# 0-100 Harkirat Cohort (MERN Stack)
+## 0-100 Harkirat Cohort (MERN Stack)
 
 - Deep dive into express.js.
 - Creating Hospital management tasks
@@ -17,4 +11,3 @@
 - React Introduction
 - Middleware assignment with jwt
 - React Todo 
->>>>>>> 210a22455e422f50173e0913c5351678d6798cb9
