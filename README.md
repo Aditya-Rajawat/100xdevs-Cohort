@@ -9,3 +9,5 @@
 - DOM Introduction
 - Debouncing in JS
 - React Introduction
+- Middleware assignment with jwt
+- React Todo 
