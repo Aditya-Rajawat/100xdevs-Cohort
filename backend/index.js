@@ -8,6 +8,14 @@ app.get("/", (req, res) => {
 // logic 
 })
 
+app.post("/", (req, res) => {
+// logic 
+})
+
+app.put("/", (req, res) => {
+// logic 
+})
+
 app.listen(port), () => {
     console.log(`Server started on port ${port}`)
 }
