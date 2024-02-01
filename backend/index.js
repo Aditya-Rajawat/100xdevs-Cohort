@@ -7,6 +7,10 @@ app.use(express.json())
 app.get("/", (req, res) => {
 // logic 
 const username = req.body.username;
+const email = req.body.email;
+res.json({
+    msg : "Heyy!!"
+})
 })
 
 app.post("/", (req, res) => {
