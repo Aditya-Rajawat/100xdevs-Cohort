@@ -14,6 +14,11 @@ app.post("/", (req, res) => {
 
 app.put("/", (req, res) => {
 // logic 
+const username = req.body.username;
+const email = req.body.email;
+res.json({
+    msg : "hello"
+})
 })
 
 app.listen(port), () => {
