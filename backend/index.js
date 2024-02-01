@@ -6,6 +6,7 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
 // logic 
+const username = req.body.username;
 })
 
 app.post("/", (req, res) => {
