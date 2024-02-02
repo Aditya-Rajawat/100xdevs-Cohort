@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 const username = req.body.username;
 const email = req.body.email;
 res.json({
-    msg : "Heyy everyone!!"
+    msg : "Heyy!!"
 })
 })
 
