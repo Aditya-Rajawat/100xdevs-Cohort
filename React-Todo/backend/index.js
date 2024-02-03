@@ -8,6 +8,9 @@ app.post("/todo", (req, res) => {
 // logic 
     const username = req.body.username;
     const title = req.body.title;
+    res.json({
+        msg : "Todo Created!!"
+    })
 })
 
 app.get("/todos", (req, res) => {
