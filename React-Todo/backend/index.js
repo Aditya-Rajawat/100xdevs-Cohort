@@ -6,15 +6,19 @@ app.use(express.json())
 
 app.post("/todo", (req, res) => {
 // logic 
-    const username = req.body.username;
-    const title = req.body.title;
+    const username = req.headers.username;
+    const title = req.headers.title;
     res.json({
         msg : "Todo Created!!"
     })
 })
 
 app.get("/todos", (req, res) => {
-// logic 
+// logic
+const todo = req.body.todo;
+res.json({
+    msg : "All set"
+})
 })
 
 app.put("/", (req, res) => {
