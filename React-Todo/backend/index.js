@@ -6,6 +6,8 @@ app.use(express.json())
 
 app.post("/todo", (req, res) => {
 // logic 
+    const username = req.body.username;
+    const title = req.body.title;
 })
 
 app.get("/todos", (req, res) => {
