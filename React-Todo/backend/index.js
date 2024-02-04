@@ -23,7 +23,11 @@ res.json({
 
 app.put("/", (req, res) => {
 // logic
-const newName = req.params.newName; 
+const newName = req.params.newName;
+const newTitle = req.params.newTitle;
+res.json({
+    msg : "Not done yet"
+}) 
 })
 
 app.listen(port), () => {
