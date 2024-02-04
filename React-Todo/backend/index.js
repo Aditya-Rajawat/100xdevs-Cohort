@@ -17,7 +17,7 @@ app.post("/todo", userMiddleware, (req, res) => {
     const username = req.headers.username;
     const title = req.headers.title;
     res.json({
-        msg : "Todo Create!!"
+        msg : "Todo Created just for instance!!"
     })
 })
 
