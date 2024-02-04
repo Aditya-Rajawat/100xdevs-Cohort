@@ -4,6 +4,14 @@ const port = 3000;
 
 app.use(express.json())
 
+app.use(userMiddleware)
+
+function userMiddleware (req, res, next){
+    if(username == "aditya"){
+        next()
+    }
+}
+
 app.post("/todo", (req, res) => {
 // logic 
     const username = req.headers.username;
