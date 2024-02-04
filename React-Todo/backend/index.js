@@ -12,7 +12,7 @@ function userMiddleware (req, res, next){
     }
 }
 
-app.post("/todo", (req, res) => {
+app.post("/todo", userMiddleware, (req, res) => {
 // logic 
     const username = req.headers.username;
     const title = req.headers.title;
