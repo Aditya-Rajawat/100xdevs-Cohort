@@ -9,7 +9,7 @@ app.post("/todo", (req, res) => {
     const username = req.headers.username;
     const title = req.headers.title;
     res.json({
-        msg : "Todo Created!!"
+        msg : "Todo Create!!"
     })
 })
 
