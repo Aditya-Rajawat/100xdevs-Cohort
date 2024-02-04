@@ -22,7 +22,8 @@ res.json({
 })
 
 app.put("/", (req, res) => {
-// logic 
+// logic
+const newName = req.params.newName; 
 })
 
 app.listen(port), () => {
