@@ -9,6 +9,10 @@ app.use(userMiddleware)
 function userMiddleware (req, res, next){
     if(username == "aditya"){
         next()
+    }else {
+        res.json({
+            msg : "Wrong Inputs"
+        })
     }
 }
 
