@@ -28,7 +28,7 @@ app.post("/todo", userMiddleware, (req, res) => {
 app.get("/todos", (req, res) => {
 // logic
 const todo = req.body.todo;
-res.json({
+res.send({
     msg : "All set done"
 })
 })
