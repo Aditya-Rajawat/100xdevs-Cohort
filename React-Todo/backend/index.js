@@ -25,7 +25,7 @@ app.get("/todos", (req, res) => {
 // logic
 const todo = req.body.todo;
 res.json({
-    msg : "All set & done"
+    msg : "All set done"
 })
 })
 
