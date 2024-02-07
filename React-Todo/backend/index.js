@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const port = 3000;
+const jwt = require('jsonwebtoken')
 
 app.use(express.json())
 
@@ -37,7 +38,7 @@ app.put("/", (req, res) => {
 // logic
 const newName = req.params.newName;
 const newTitle = req.params.newTitle;
-res.json({
+res.send({
     msg : "Not done yet"
 }) 
 })
