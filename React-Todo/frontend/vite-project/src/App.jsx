@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 
 const App = () => {
-
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
 
   const [mainTask, setMainTask] = useState([]);
 
   const handleClick = () => {
-    console.log(title)
-    console.log(desc)
-    setMainTask([...mainTask, title + desc])
-    mainTask.map((t,i)=> {
-      return <div>
+    console.log(title);
+    console.log(desc);
+    setMainTask([...mainTask, title + desc]);
+  };
+  mainTask.map((t, i) => {
+    return (
+      <div>
         <ul>
           <li>{t.title}</li>
           <li>{t.desc}</li>
         </ul>
       </div>
-    })
-  }
+    );
+  });
 
   return (
     <>
@@ -35,7 +36,7 @@ const App = () => {
             placeholder="Enter title"
             value={title}
             onChange={(e) => {
-              setTitle(e.target.value)
+              setTitle(e.target.value);
             }}
           />
           <input
@@ -44,7 +45,7 @@ const App = () => {
             placeholder="Enter description"
             value={desc}
             onChange={(e) => {
-              setDesc(e.target.value)
+              setDesc(e.target.value);
             }}
           />
         </div>
