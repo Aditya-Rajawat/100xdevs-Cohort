@@ -10,6 +10,7 @@ const App = () => {
     setMainTask(...mainTask);
     setMainTask(title + " " + desc);
     console.log(mainTask)
+    setMainTask(mainTask)
   };
 
   return (
