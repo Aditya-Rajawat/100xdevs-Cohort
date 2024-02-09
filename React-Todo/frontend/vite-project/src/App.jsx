@@ -10,17 +10,6 @@ const App = () => {
     setMainTask(title + " " + desc);
   };
 
-  // mainTask.map((t, i) => {
-  //   return (
-  //     <div>
-  //       <ul>
-  //         <li>{t.title}</li>
-  //         <li>{t.desc}</li>
-  //       </ul>
-  //     </div>
-  //   );
-  // });
-
   return (
     <>
       <div className="flex flex-col gap-10 justify-center items-center m-6">
