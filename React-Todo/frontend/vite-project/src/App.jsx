@@ -7,7 +7,7 @@ const App = () => {
   const [mainTask, setMainTask] = useState([]);
 
   const handleClick = () => {
-    setMainTask(title , desc);
+    setMainTask(title + " " + desc);
   };
 
   // mainTask.map((t, i) => {
