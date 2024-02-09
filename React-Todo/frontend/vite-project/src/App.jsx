@@ -8,6 +8,7 @@ const App = () => {
 
   const handleClick = () => {
     setMainTask(title + " " + desc);
+    console.log(setMainTask)
   };
 
   return (
