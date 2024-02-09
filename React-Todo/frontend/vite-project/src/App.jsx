@@ -51,7 +51,7 @@ const App = () => {
           />
         </div>
         <button
-          className="bg-red-700 p-4 rounded-full text-white font-semibold hover:drop-shadow-xl"
+          className="bg-green-400-700 p-4 rounded-full text-white font-semibold hover:drop-shadow-xl"
           onClick={handleClick}
         >
           Add Task
