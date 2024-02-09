@@ -7,9 +7,8 @@ const App = () => {
   const [mainTask, setMainTask] = useState([]);
 
   const handleClick = () => {
-    const data = title + " " + desc 
-    setMainTask(...mainTask, data);
-    // setMainTask(title + " " + desc);
+    setMainTask(...mainTask);
+    setMainTask(title + " " + desc);
     console.log(mainTask)
   };
 
