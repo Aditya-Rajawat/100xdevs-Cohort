@@ -7,21 +7,19 @@ const App = () => {
   const [mainTask, setMainTask] = useState([]);
 
   const handleClick = () => {
-    // console.log(title);
-    // console.log(desc);
     setMainTask(title + desc);
   };
 
-  mainTask.map((t, i) => {
-    return (
-      <div>
-        <ul>
-          <li>{t.title}</li>
-          <li>{t.desc}</li>
-        </ul>
-      </div>
-    );
-  });
+  // mainTask.map((t, i) => {
+  //   return (
+  //     <div>
+  //       <ul>
+  //         <li>{t.title}</li>
+  //         <li>{t.desc}</li>
+  //       </ul>
+  //     </div>
+  //   );
+  // });
 
   return (
     <>
