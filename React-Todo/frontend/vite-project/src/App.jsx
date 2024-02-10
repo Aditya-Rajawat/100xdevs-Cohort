@@ -9,7 +9,7 @@ const App = () => {
   const handleClick = () => {
     setMainTask(...mainTask);
     setMainTask(title + " " + desc);
-    console.log(mainTask)
+    // console.log(mainTask)
   };
 
   const taskdata = mainTask.map((t, i) => {
