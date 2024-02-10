@@ -23,7 +23,7 @@ const App = () => {
           <input
             className="focus:outline-double p-4 bg-gray-200 rounded-lg"
             type="text"
-            placeholder="Enter title"
+            placeholder="Enter task title"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
