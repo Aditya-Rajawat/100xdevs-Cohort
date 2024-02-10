@@ -12,6 +12,10 @@ const App = () => {
     console.log(mainTask)
   };
 
+  const taskdata = mainTask.map((t, i) => {
+    return t
+  })
+
   return (
     <>
       <div className="flex flex-col gap-10 justify-center items-center m-6">
@@ -48,7 +52,7 @@ const App = () => {
 
         <div className="w-full p-6 bg-slate-200 flex justify-between">
           <ul>
-            <li>{mainTask}</li>
+            <li>{taskdata}</li>
           </ul>
         </div>
       </div>
