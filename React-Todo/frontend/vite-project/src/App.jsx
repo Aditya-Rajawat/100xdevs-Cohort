@@ -10,11 +10,7 @@ const App = () => {
     setMainTask(...mainTask);
     setMainTask(title + " " + desc);
   };
-
-  const taskdata = mainTask.map((t, i) => {
-    return t
-  })
-
+  
   return (
     <>
       <div className="flex flex-col gap-10 justify-center items-center m-6">
