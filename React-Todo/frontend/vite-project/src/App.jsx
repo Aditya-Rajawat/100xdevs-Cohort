@@ -35,7 +35,7 @@ const App = () => {
           <input
             className="focus:outline-double p-4 bg-gray-200 rounded-lg"
             type="text"
-            placeholder="Enter description"
+            placeholder="Enter description of task"
             value={desc}
             onChange={(e) => {
               setDesc(e.target.value);
