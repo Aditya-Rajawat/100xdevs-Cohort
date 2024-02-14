@@ -48,7 +48,6 @@ const App = () => {
         <div className="w-full p-6 bg-slate-200 flex justify-between">
           <ul>
             <li>{taskdata}</li>
-            <li>{taskdata}</li>
           </ul>
         </div>
       </div>
